@@ -8,7 +8,7 @@ class ConfigController
 
     public function __construct()
     {
-        echo "Carregar a pagina<br>";
+        echo "Carregar a pagina Inicial<br>";
         if(!empty(filter_input(INPUT_GET, 'url', FILTER_DEFAULT))){
             $this->url = filter_input(INPUT_GET, 'url', FILTER_DEFAULT);
             var_dump($this->url);
